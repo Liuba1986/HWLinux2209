@@ -1,0 +1,16 @@
+   0 cd
+   1 cd ~
+   2 date > mydate.txt
+   3 cat mydate.txt
+   4 cd
+   5 df -h / >> mydate.txt
+   6 cat mydate.txt
+   7 tail -n 5 ~/.bash_history >> mydate.txt
+   8 cat
+   9 tail -n 5 ~/.bash_history >> mydate.txt
+  10 grep "vendor" /proc/cpuinfo | awk -F: '{print $2}' | sort | uniq >> mydate.txt
+  11 nano mydate.txt
+  12 ps aux | wc -l | awk '{print $1-1}' >> mydate.txt
+  13 cat mydate.txt
+  14 history
+  15 history > history_22_09.txt
